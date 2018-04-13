@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Financial Status</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+		<link type="text/css" rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="main-panel">
+		<header>
+			<div class="header__title">
+				<h1>Financial Status</h1>
+			</div>
+			<div class="budget">
+        <div class="budget__income clearfix">
+          <div class="budget__income--text">Incomes</div>
+          <div class="right">
+            <div class="budget__income--value">+ 4,300.00</div>
+          </div>
+        </div>
+
+				<div class="budget__title"> 
+					<span class="budget__title--month">%Month%</span>: <span class="budget__title--value">+ 2,345.64</span>
+				</div>  
+
+        <div class="budget__expenses clearfix">
+          <div class="budget__expenses--text">Expenses</div>
+          <div class="right clearfix">
+            <div class="budget__expenses--value">- 1,954.36</div>
+            <div class="budget__expenses--percentage">45%</div>
+          </div>
+        </div>
+			</div>
+			<div class="records">
+				<span class="records__title">Looking for records?</span>
+				<div class="records__date">
+          <select class="records__date--year">
+            <option value="" selected>Year</option>
+            <option value="2018">2018</option>
+            <option value="2017">2017</option>
+          </select>
+          <select class="records__date--month">
+            <option value="" selected>Month</option>
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+          </select>
+				</div>
+				<ul class="records__stored">
+          <li class="js-load">Load</li>
+          <li class="js-save">Save</li>
+          <li class="js-clear">Delete</li>
+        </ul>
+			</div>
+			<div class="input-data">
+				<select class="input-data__type">
+					<option value="inc" selected>Income</option>
+					<option value="exp">Expense</option>
+				</select>
+				<input type="text" class="input-data__description" placeholder="Add description">
+				<input type="number" class="input-data__day" placeholder="Day of Month" min="1" max="31">
+				<input type="number" class="input-data__value" placeholder="Value">
+				<button class="input-data__btn">Add</button>
+			</div>
+		</header>
+		<div class="container clearfix">
+			<div class="income">
+				<h2 class="income__title">Incomes</h2>
+				<div class="head">
+					<span class="head__desc">Description</span>
+					<span class="head__day">Day of Month</span>
+					<span class="right head__item_right">Amount</span>
+				</div>
+				<div class="income__list">
+				</div>
+			</div>
+
+			<div class="expenses">
+				<h2 class="expenses__title">Expenses</h2>
+				<div class="head">
+					<span class="head__desc">Description</span>
+					<span class="head__day">Day of Month</span>
+					<span class="right head__item_right">Pct.</span>
+					<span class="right head__item_right">Amount</span>
+				</div>
+				<div class="expenses__list">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
